@@ -5,20 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deidara — The Art Is an Explosion</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> <!-- Added for premium font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
   <style>
     :root {
-      --bg-dark: rgba(20, 20, 20, 0.5); /* Lighter and more transparent */
-      --bg-panel: rgba(30, 30, 30, 0.6); /* Even more glass-like */
-      --accent: #00D4FF; /* Aqua replacing red */
-      --accent-soft: #7FFFD4; /* Lighter aqua for soft accents */
+      --bg-dark: rgba(20, 20, 20, 0.5); 
+      --bg-panel: rgba(30, 30, 30, 0.6); 
+      --accent: #00D4FF;             
+      --accent-soft: #7FFFD4; 
       --text-main: #f1f1f1;
-      --text-muted: rgba(255, 255, 255, 0.9); /* Slightly brighter for readability */
+      --text-muted: rgba(255, 255, 255, 0.9); 
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Oswald', sans-serif;
-      /* Removed radial-gradient intro background */
       color: var(--text-main);
     }
 
@@ -31,9 +30,9 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background: rgba(0, 0, 0, 0.4); /* More transparent */
-      backdrop-filter: blur(15px); /* Increased blur for premium effect */
-      border-bottom: 1px solid rgba(0, 212, 255, 0.3); /* Subtle aqua accent for premium */
+      background: rgba(0, 0, 0, 0.4); 
+      backdrop-filter: blur(15px); 
+      border-bottom: 1px solid rgba(0, 212, 255, 0.3); 
     }
     nav span {
       color: var(--accent);
@@ -50,15 +49,15 @@
       position: fixed;
       bottom: 1rem;
       right: 2rem;
-      color: rgba(0, 212, 170, 0.6); /* Aqua-green with transparency for watermark effect */
-      font-size: 1.25rem; /* Smaller for subtle watermark */
+      color: rgba(0, 212, 170, 0.6); 
+      font-size: 1.25rem; 
       font-weight: 400;
       letter-spacing: 1px;
-      text-shadow: 0 0 5px rgba(0, 212, 170, 0.4); /* Subtle glow */
-      opacity: 1.2; /* Semi-transparent */
-      pointer-events: none; /* No interaction */
+      text-shadow: 0 0 5px rgba(0, 212, 170, 0.4); 
+      opacity: 1.2; 
+      pointer-events: none; 
       z-index: 999;
-      transform: rotate 0; /* Slight tilt for watermark flair */
+      transform: rotate 0; 
     }
 
     header {
@@ -73,13 +72,13 @@
     header p { max-width: 600px; color: var(--text-muted); margin-top: 1rem; font-size: 1.2rem; }
 
     section {
-      padding: 2rem 10%; /* Reduced padding to minimize space */
-      /* Removed background for clean integration */
+      padding: 2rem 10%; 
+     
     }
     .panel {
-      /* Removed background, border, and box-shadow for seamless text integration */
-      padding: 1rem 0; /* Further reduced padding */
-      margin-bottom: 1rem; /* Reduced margin */
+      
+      padding: 1rem 0; 
+      margin-bottom: 1rem; 
       opacity: 0;
       transform: translateY(40px);
     }
@@ -94,22 +93,22 @@
       overflow: hidden;
       padding: 3rem 3rem 3rem 7rem;
       border-left: 6px solid var(--accent);
-      background: linear-gradient(135deg, rgba(30, 0, 0, 0.6), rgba(0, 212, 255, 0.1)); /* Darker background */
+      background: linear-gradient(135deg, rgba(30, 0, 0, 0.6), rgba(0, 212, 255, 0.1)); 
       cursor: pointer;
-      backdrop-filter: blur(10px); /* Enhanced glass effect */
-      border-radius: 15px; /* More rounded for premium */
+      backdrop-filter: blur(10px); 
+      border-radius: 15px; 
       aspect-ratio: 32 / 9;
       height: auto;
-      border: 1px solid rgba(0, 212, 255, 0.3); /* Aqua border */
-      box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2); /* Slightly brighter shadow */
+      border: 1px solid rgba(0, 212, 255, 0.3); 
+      box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2); 
     }
     .attack-card h3 {
-      font-family: 'Playfair Display', serif; /* Premium serif font for C1, C2, etc. */
-      font-weight: 700; /* Bold for premium */
+      font-family: 'Playfair Display', serif; 
+      font-weight: 700; 
       font-size: 1.8rem;
       color: var(--accent-soft);
       margin: 0;
-      text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); /* Subtle glow for premium effect */
+      text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); 
     }
     .attack-card p {
       color: var(--text-muted);
@@ -121,9 +120,9 @@
       top: 50%;
       width: 130px;
       transform: translateY(-50%) scale(0.7);
-      opacity: 0.05; /* Even more subtle */
-      filter: brightness(0.7) drop-shadow(0 0 25px rgba(0, 212, 255, 0.9)); /* Darker images with aqua glow */
-      transition: 0.1s; /* Super fast transition */
+      opacity: 0.05; 
+      filter: brightness(0.7) drop-shadow(0 0 25px rgba(0, 212, 255, 0.9));
+      transition: 0.1s; 
     }
     .attack-card:hover img { opacity: 1; transform: translateY(-50%) scale(1); }
 
@@ -144,7 +143,6 @@
     }
     .attack-card:hover::before { opacity: 1; transform: scale(1.2); }
 
-    /* Specific attack backgrounds with linear gradient filling box ends */
     .attack-card[data-attack="c1"]::before {
       background: url("https://static.wikia.nocookie.net/32822b58-2490-415f-a6f1-19fc9fb33fc8/scale-to-width/755") center/cover no-repeat, linear-gradient(135deg, rgba(0, 212, 255, 0.3), transparent);
     }
@@ -162,7 +160,7 @@
       content: '';
       position: absolute;
       inset: -70%;
-      background: conic-gradient(from 0deg, transparent, rgba(0, 212, 255, 0.5), transparent); /* Aqua effect */
+      background: conic-gradient(from 0deg, transparent, rgba(0, 212, 255, 0.5), transparent); 
       opacity: 0;
     }
     .attack-card:hover::after { animation: blastSpin 0.6s linear; }
@@ -170,21 +168,21 @@
     .quote {
       text-align: center;
       padding: 10rem;
-      background: linear-gradient(145deg, rgba(40, 0, 0, 0.4), rgba(0, 212, 255, 0.1)); /* Aqua-tinted */
+      background: linear-gradient(145deg, rgba(40, 0, 0, 0.4), rgba(0, 212, 255, 0.1)); 
       font-size: 1.6rem;
       color: var(--accent-soft);
-      backdrop-filter: blur(12px); /* More blur */
+      backdrop-filter: blur(12px); 
       border-radius: 10px;
-      border: 1px solid rgba(0, 212, 255, 0.2); /* Aqua border */
+      border: 1px solid rgba(0, 212, 255, 0.2); 
     }
     footer {
       text-align: center;
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.5); /* More transparent */
-      color: #666; /* Original color */
-      backdrop-filter: blur(10px); /* Subtle blur */
-      border-top: 1px solid rgba(0, 212, 255, 0.3); /* Aqua accent */
-      font-family: 'Oswald', sans-serif; /* Exact font */
+      background: rgba(0, 0, 0, 0.5);
+      color: #666; 
+      backdrop-filter: blur(10px); 
+      border-top: 1px solid rgba(0, 212, 255, 0.3); 
+      font-family: 'Oswald', sans-serif;
     }
 
     .attack-card::marker { display: none; }
@@ -203,7 +201,7 @@
       z-index: -1;
       background:
         linear-gradient(
-          rgba(0, 0, 0, 0.3), /* Much lighter overlay */
+          rgba(0, 0, 0, 0.3), 
           rgba(0, 0, 0, 0.4)
         ),
         url('https://wallpapercave.com/wp/wp12293805.jpg') center / cover no-repeat;
@@ -293,7 +291,6 @@
     gsap.to(p, { opacity: 1, y: 0, duration: 1, scrollTrigger: { trigger: p, start: 'top 80%' } });
   });
 
-  // Home button functionality
   document.getElementById('home-btn').addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
@@ -301,3 +298,4 @@
 </body>
 
 </html>
+
